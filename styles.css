@@ -42,7 +42,7 @@ header, #todo > section > section {
 }
 
 /* Typography */
-h1, h2, h3, h4, #todo {
+h1, h2, h3, h4, #todo, footer p {
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ h3 {
   font-size: 40px;
 }
 
-input {
+input, footer p {
   font-size: 20px;
 }
 
