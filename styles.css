@@ -1,14 +1,11 @@
 /* General setup */
-/*
-  background image is from
-  http://blog.hostbaby.com/2014/03/10-free-website-background-images-for-spring/
-*/
 body {
-  background-image: url("img/background2.png");
+  background-image: url("img/cool-background.png");
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Share Tech Mono', monospace;
   font-size: 30px;
+  color: white
 }
 
 section {
@@ -44,7 +41,6 @@ h1, h2 {
   font-family: 'Coda Caption', sans-serif;
   text-transform: uppercase;
   text-shadow: 20px 15px 20px #551755;
-  color: white;
 }
 
 h1 {
