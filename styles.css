@@ -1,5 +1,4 @@
 /* General setup */
-<<<<<<< HEAD
 /*
   background image is from
   http://blog.hostbaby.com/2014/03/10-free-website-background-images-for-spring/
@@ -8,8 +7,6 @@
 * {
   box-sizing: border-box;
 }
-=======
->>>>>>> 0812f6ce29fba1b93e677c6c5e270bba107c2c2b
 body {
   background-image: url("img/cool-background.png");
   background-size: cover;
@@ -17,11 +14,7 @@ body {
   font-family: 'Share Tech Mono', monospace;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 30px;
-<<<<<<< HEAD
-
-=======
   color: white
->>>>>>> 0812f6ce29fba1b93e677c6c5e270bba107c2c2b
 }
 
 section {
@@ -37,12 +30,7 @@ main > section {
   border-top-style: dotted;
 }
 
-<<<<<<< HEAD
 header, section section {
-=======
-header, section section, #todo section {
-  display: flex;
->>>>>>> 0812f6ce29fba1b93e677c6c5e270bba107c2c2b
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
