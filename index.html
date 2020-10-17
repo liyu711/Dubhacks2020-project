@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dropdown.css">
     <script src="index.js"></script>
     <title>Sensitivity Calculator</title>
   </head>
@@ -19,9 +20,26 @@
           <li class="nav-item">
               <a href="#"><span class="logo" aria-hidden="true"><img class="icon" src="img/placeholder-icon.png">Calculator</a>
           </li>
-          <li class="nav-item"><a href="https://www.google.com/">Changelog</a></li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Changelog</button>
+                <div class="dropdown-content">
+                  <a href="#">Release 1.0</a>
+                  <a href="#">Release 1.1</a>
+                </div>
+            </div>
+          </li>
           <li class="nav-item"><a href="https://www.google.com/">Credits</a></li>
           <li class="nav-item"><a href="https://www.google.com/">Supported Games</a></li>
+        <li class = "nav-item">
+          <div class = "dropdown">
+            <button class = "drobtn">Supported Games</button>
+            <div class = "dropdown-content">
+              <a href = "#">Tom Clancy’s Rainbow Six Siege</a>
+              <a href = "#">Valorant</a>
+              <a href = "#">Counter-Strike: Global Offensive</a>
+          </div>
+        </li>
       </ul>
   </nav>
     <main>
@@ -29,9 +47,8 @@
         <h2>Introduction & Instruction</h2>
         <section>
           <p>
-           Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity
-           for different games. We are now supporting three games: Tom Clancy’s Rainbow Six Siege
-           , Valorant, and Counter-Strike: Global Offensive.
+           Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity for different games. We mainly support three games: 1) Tom Clancy’s Rainbow Six Siege
+2) Valorant, 3) Counter-Strike: Global Offensive.
           </p>
         </section>
       </section>
@@ -39,28 +56,27 @@
       <section id="todo">
         <h2>Calculation</h2>
         <section>
-          <section>
-            <h3>Convert From</h3>
-            <img src="img/drawing1.jpg" alt="Fragments of a Lady's Eyes, Lips and Hand">
-            <label for="item">Mouse DPI</label>
-            <input type="text" name="item" id="item1">
-            <label for="item">FOV</label>
-            <input type="text" name="item" id="item2">
-            <label for="item">Sensitivity</label>
-            <input type="text" name="item" id="item3">
-          </section>
-          <section>
-            <h3>Convert To</h3>
-            <img src="img/drawing4.jpg"
-              alt="A Cat With Combination of Polygans with Different Lines, Dots and Colors">
-            <label for="item">Mouse DPI</label>
-            <input type="text" name="item" id="item4">
-            <label for="item">FOV</label>
-            <input type="text" name="item" id="item5">
-            <label for="item">Sensitivity</label>
-            <input type="text" name="item" id="item6">
-          </section>
+        <section>
+          <img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic">
+          <label for="item">Mouse DPI</label>
+          <input type="text" name="item" id="item">
+          <label for="item">FOV</label>
+          <input type="text" name="item" id="item">
+          <label for="item">Sensitivity</label>
+          <input type="text" name="item" id="item">
         </section>
+        <h3>Convert To</h3>
+        <section>
+          <img src="img/drawing4.jpg"
+            alt="A Cat With Combination of Polygans with Different Lines, Dots and Colors">
+          <label for="item">Mouse DPI</label>
+          <input type="text" name="item" id="item">
+          <label for="item">FOV</label>
+          <input type="text" name="item" id="item">
+          <label for="item">Sensitivity</label>
+          <input type="text" name="item" id="item">
+        </section>
+      </section>
         <section>
           <button>Calculate</button>
           <ul></ul>
