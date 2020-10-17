@@ -15,36 +15,36 @@
    */
   function init() {
     // THIS IS THE CODE THAT WILL BE EXECUTED ONCE THE WEBPAGE LOADS
-    qs("button").addEventListener("click", planAdd);
-
-    let list = qsa("#plan li");
-    for (let i = 0; i < list.length; i++) {
-      // do we need to save expensive function in this case?
-      if (!list[i].classList.contains("finished")) {
-        list[i].addEventListener("click", finishList);
-      }
-    }
+    qs("button").addEventListener("click", convert);
   }
 
   /**
    * Keeping track of the client's input, add it to the To Do List,
    * clear the input tracked to make the input box avaible and focused for typing.
    */
-  function planAdd() {
-    let input = qs("input");
+  function convert() {
+    let input1 = id("item1");
+    let input2 = id("item2");
+    let input3 = id("item3");
     let li = gen("li");
-    li.textContent = input.value;
+    let button = gen("button");
+    /*some game function pass in parameter of three input.value
+    and output a number */
+    li.textContent = // that number
     qs("#todo ul").appendChild(li);
-    input.value = "";
-    li.addEventListener("click", finishList);
-    input.focus();
+    input1.value = "";
+    input2.value = "";
+    input3.value = "";
+    li.select();
+    document.execCommand("copy");
+    input1.focus();
   }
 
   /**
    * Make the current target to be crossed out with a color of gray.
    */
-  function finishList() {
-    this.classList.add("finished");
+  function something() {
+    // do something
   }
 
   /** ------------------------------ Helper Functions  ------------------------------ */
