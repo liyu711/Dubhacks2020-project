@@ -44,7 +44,7 @@ header, #todo > section > section {
 }
 
 /* Typography */
-h1, h2, h3, h4, #todo {
+h1, h2, h3, h4, #todo, footer p {
   text-align: center;
 }
 
@@ -52,7 +52,7 @@ h1, h2 {
   /*font-family: 'Coda Caption', sans-serif;*/
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
-  /*text-shadow: 20px 15px 20px #551755;*/
+  text-shadow: 10px 10px 10px rgb(138, 190, 250);
 }
 
 h1 {
@@ -65,6 +65,10 @@ h2 {
 
 h3 {
   font-size: 40px;
+}
+
+input, footer p {
+  font-size: 20px;
 }
 
 p, ul {
@@ -98,7 +102,6 @@ img {
   padding: 0;
   margin: 0;
   padding-top: .wrem;
-  justify-content: space-between;
 }
 
 .nav-item {
@@ -112,4 +115,17 @@ img {
 a {
   display: inline;
   color: white;
+}
+
+.logo {
+  max-width: 2rem;
+  max-height: 2rem;
+  display: inline;
+  padding: 0;
+}
+
+img.icon {
+  float: left;
+  max-width: 1.8rem;
+  max-height: 1.8rem;
 }
