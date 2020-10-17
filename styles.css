@@ -1,4 +1,12 @@
 /* General setup */
+/*
+  background image is from
+  http://blog.hostbaby.com/2014/03/10-free-website-background-images-for-spring/
+*/
+
+* {
+  box-sizing: border-box;
+}
 body {
   background-image: url("img/cool-background.png");
   background-size: cover;
@@ -22,8 +30,7 @@ main > section {
   border-top-style: dotted;
 }
 
-header, section section, #todo section {
-  display: flex;
+header, section section {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -70,4 +77,33 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  background-color: #4b2e83;
+  padding: .75rem;
+  top: 0;
+  left: 0;
+}
+
+.nav-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding-top: .5rem;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.main-title {
+  margin-top: 3em;
+}
+
+a {
+  display: inline;
+  color: white;
 }
