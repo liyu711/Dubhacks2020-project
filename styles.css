@@ -22,6 +22,8 @@ section {
   padding: 15px;
 }
 
+
+
 main > section {
   width: 80%;
   margin-bottom: 20px;
@@ -84,16 +86,19 @@ img {
   position: fixed;
   width: 100%;
   background-color: #4b2e83;
-  padding: .75rem;
+  padding: .65rem;
   top: 0;
   left: 0;
+  font-size: 17px;
+  float: left;
 }
 
 .nav-list {
   display: inline-block;
   padding: 0;
   margin: 0;
-  padding-top: .5rem;
+  padding-top: .wrem;
+  justify-content: space-between;
 }
 
 .nav-item {
