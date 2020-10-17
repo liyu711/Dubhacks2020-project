@@ -22,8 +22,6 @@ section {
   padding: 15px;
 }
 
-
-
 main > section {
   width: 80%;
   margin-bottom: 20px;
@@ -129,3 +127,4 @@ img.icon {
   max-width: 1.8rem;
   max-height: 1.8rem;
 }
+
