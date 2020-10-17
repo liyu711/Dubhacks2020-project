@@ -30,7 +30,8 @@ main > section {
   border-top-style: dotted;
 }
 
-header, section section {
+header, section section, #todo > section {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;

@@ -35,16 +35,16 @@
     input1.value = "";
     input2.value = "";
     input3.value = "";
-    li.select();
-    document.execCommand("copy");
+    button.addEventListener("click", copy);
     input1.focus();
   }
 
   /**
    * Make the current target to be crossed out with a color of gray.
    */
-  function something() {
-    // do something
+  function copy() {
+    li.select();
+    document.execCommand("copy");
   }
 
   /** ------------------------------ Helper Functions  ------------------------------ */
