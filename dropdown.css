@@ -1,10 +1,12 @@
 .dropbtn, .tablink {
-    background-color: azure;
-    color: teal;
+    background-color: rgb(28, 23, 70);
+    color: whitesmoke;
+    opacity: 120%;
     padding: 16px;
     font-size: 16px;
     border: none;
     font-family: 'Share Tech Mono', monospace;
+    opacity: 85%;
 }
 
 .dropdown {
@@ -38,41 +40,12 @@
     background-color:lightblue;
 }
 
-
-.dropbtn2 {
-    background-color: white;
-    color:azure;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    font-family: 'Share Tech Mono', monospace;
-} 
-.dropdown2 {
-    display: inline-block;
+#todo .dropdown {
+    width: 249px;
+    height: 15px;
 }
 
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    z-index: 1;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 16px;
-}
-
-.dropdown-content2 b {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown2:hover .dropdown-content2 {
-    display: block;
-}
-
-.dropdown-content2 b:hover {
-    background-color:lightblue;
+#todo .dropbtn {
+    width: 249px;
+    height: 15px;
 }
