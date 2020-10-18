@@ -82,9 +82,20 @@ p, ul {
 }
 
 /* images setup */
-img {
+img.game {
   width: 300px;
   height: 300px;
+  border-radius: 10%;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: 5pt solid rgb(207, 205, 205);
+}
+
+img.profile {
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 10%;
   margin-right: 15px;
   margin-top: 10px;
