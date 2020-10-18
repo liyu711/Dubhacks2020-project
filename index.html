@@ -76,11 +76,11 @@
               });
             </script>
             <label for="item">Mouse DPI</label>
-            <input type="text" name="item" id="item">
+            <input type="text" name="item" id="item1">
             <label for="item">FOV</label>
-            <input type="text" name="item" id="item">
+            <input type="text" name="item" id="item2">
             <label for="item">Sensitivity</label>
-            <input type="text" name="item" id="item">
+            <input type="text" name="item" id="item3">
           </section>
 
           <section>
@@ -105,16 +105,45 @@
               });
             </script>
             <label for="item">Mouse DPI</label>
-            <input type="text" name="item" id="item">
+            <input type="text" name="item" id="item4">
             <label for="item">FOV</label>
-            <input type="text" name="item" id="item">
+            <input type="text" name="item" id="item5">
             <label for="item">Sensitivity</label>
-            <input type="text" name="item" id="item">
+            <input type="text" name="item" id="item6">
           </section>
 
         </section>
         <section>
-          <button>Calculate</button>
+          <button onclick="calculates()">Calculate</button>
+        </section>
+        <section>
+        <script>
+        function calculates() {
+          let input1 = id("item1").value;
+          let input2 = id("item2").value;
+          let input3 = id("item3").value;
+          let input4 = id("item4").value;
+          let input5 = id("item5").value;
+          let input6 = id("item6").value;
+          if(id("item1").value == "" || id("item3").value == "") {
+            id("demo").innerHTML = "Not enough information";
+          }
+          if(id("item4").value == "") {
+            var result = (input1 * input3 * 12400 / (input6 * 41000));
+            //id("demo").innerHTML = "The sens is " + eval("result");
+            $("[id$='item4']").text(result);
+          } else if (id("item6").value == ""){
+            var result = (input1 * input3 * 12400 / (input4 * 41000));
+            id("demo").innerHTML = eval("result");
+          }
+        }
+
+        function id(idName) {
+          return document.getElementById(idName);
+        }
+        </script>
+
+        <p id="demo"></p>
         </section>
 
       </section>
