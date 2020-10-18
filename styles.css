@@ -177,7 +177,7 @@ img.icon {
   text-decoration: underline;
 }
 
-#Changelog hr {
-  height: 10px;
+#break {
+  height: 8px;
   background-color: whitesmoke;
 }
