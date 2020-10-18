@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="dropdown.css">
     <link rel="stylesheet" href="tab.css">
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Sensitivity Calculator</title>
   </head>
 
@@ -53,20 +54,28 @@
         <h2>Calculation</h2>
         <section>
           <section>
-            <h3>Convert From</h3>
-            <img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic">
-            <label for="item">Game</label>
-            <div class="dropdown">
-              <!-- ## need function calculate -->
-              <!-- <button onclick="calculate()" class="dropbtn2">Game</button> -->
-              <button class="dropbtn"></button>
-              <div id="game" class="dropdown-content">
-                <a>Tom Clancy’s Rainbow Six Siege</a>
-                <a>Valorant</a>
-                <a>Counter-Strike: Global Offensive</a>
-              </div>
-            </div>
-            <hr>  
+            <h3>Convert From:</h3>
+            
+            <div id="r6-1" class="group"><img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic"></div>
+            <div id="cs-1" class="group"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
+            <div id="va-1" class="group"><img src="img/Valorant.jpeg"></div>
+            <select id="selectMe">
+              <option value="r6-1">Tom Clancy’s Rainbow Six Siege</option>
+              <option value="cs-1">Counter Strike: Global Offensive</option>
+              <option value="va-1">Valorant</option>
+            </select>
+
+            <script>
+              $(document).ready(function() {
+                $('.group').hide();
+                $('#r6-1').show();
+                $('#selectMe').change(function() {
+                  $('.group').hide();
+                  $('#'+$(this).val()).show();
+                })
+              });
+            </script>
+
             <label for="item">Mouse DPI</label>
             <input type="text" name="item" id="item">
             <label for="item">FOV</label>
@@ -76,21 +85,27 @@
           </section>
 
           <section>
-            <h3>Convert To</h3>
-            <img src="img/Valorant.jpeg"
-              alt="Valorant pic">
-             <label for="item">Game</label>
-            <div class="dropdown">
-              <!-- ## need function calculate -->
-              <!-- <button onclick="calculate()" class="dropbtn2">Game</button> -->
-              <button class="dropbtn"></button>
-              <div id="game" class="dropdown-content">
-                <a>Tom Clancy’s Rainbow Six Siege</a>
-                <a>Valorant</a>
-                <a>Counter-Strike: Global Offensive</a>
-              </div>
-            </div>
-            <hr>  
+            <h3>Convert To:</h3>
+            <div id="r6-2" class="group2"><img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic"></div>
+            <div id="cs-2" class="group2"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
+            <div id="va-2" class="group2"><img src="img/Valorant.jpeg"></div>
+            <select id="selectMe2">
+              <option value="r6-2">Tom Clancy’s Rainbow Six Siege</option>
+              <option value="cs-2">Counter Strike: Global Offensive</option>
+              <option value="va-2">Valorant</option>
+            </select>
+
+            <script>
+              $(document).ready(function() {
+                $('.group2').hide();
+                $('#r6-2').show();
+                $('#selectMe2').change(function() {
+                  $('.group2').hide();
+                  $('#'+$(this).val()).show();
+                })
+              });
+            </script>
+
             <label for="item">Mouse DPI</label>
             <input type="text" name="item" id="item">
             <label for="item">FOV</label>
