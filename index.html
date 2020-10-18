@@ -76,8 +76,9 @@
               <option value="cs-1">Counter Strike: Global Offensive</option>
               <option value="va-1">Valorant</option>
             </select>
-            <input type="invisible" readonly="readonly" id="txtresult1"/>
-
+            <p style="display:none">
+              <input type="text" readonly="readonly" id="txtresult1"/>
+            </p>
             <script>
               $(document).ready(function() {
                 $('.group').hide();
@@ -118,8 +119,10 @@
               <option value="cs-2">Counter Strike: Global Offensive</option>
               <option value="va-2">Valorant</option>
             </select>
-            <input type="invisible" readonly="readonly" id="txtresult2"/>
 
+            <p style="display:none">
+              <input type="invisible" readonly="readonly" id="txtresult2"/>
+            </p>  
             <script>
               $(document).ready(function() {
                 $('.group2').hide();
