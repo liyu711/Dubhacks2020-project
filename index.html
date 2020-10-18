@@ -7,38 +7,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="tab.css">
     <script src="index.js"></script>
     <title>Sensitivity Calculator</title>
   </head>
 
   <body>
-    <header>
-      <h1 class="main-title">Mouse Sensitivity Calculator</h1>
-    </header>
+    <script type="text/javascript" src="tabs.js"></script>
     <nav class="nav-bar">
       <ul class="nav-list">
           <li class="nav-item">
+<<<<<<< HEAD
+              <button class="tablink" onclick="openTab(event, 'Calculator')">
+                <span class="logo" aria-hidden="true"><img class="icon" src="img/placeholder-icon.png">Calculator</button>
+=======
               <a href="#"><span class="logo" aria-hidden="true"><img class="icon" src="img/placeholder-icon.png"></a>
           </li>
           <li class = "nav-item">
             <div class = "dropdown">
               <button class = "dropbtn">Calculator</button>
             </div>
+>>>>>>> c3ca580a8410fc6aca18d074d6136ebb87293403
           </li>
           <li class="nav-item">
             <div class="dropdown">
-              <button class="dropbtn">Changelog</button>
-                <div class="dropdown-content">
-                  <a href="#">Release 1.0</a>
-                  <a href="#">Release 1.1</a>
-                </div>
+              <button class="dropbtn" onclick="openTab(event, 'Changelog')">Changelog</button>
             </div>
           </li>
+<<<<<<< HEAD
+          <li class="nav-item">
+            <button class="tab">Credits</button></li>
+=======
           <li class = "nav-item">
             <div class = "dropdown">
               <button class = "dropbtn">Credits</button>
             </div>
           </li>
+>>>>>>> c3ca580a8410fc6aca18d074d6136ebb87293403
         <li class = "nav-item">
           <div class = "dropdown">
             <button class = "dropbtn">Supported Games</button>
@@ -51,13 +56,19 @@
         </li>
       </ul>
   </nav>
+
+  <div id='Calculator' class="content">
     <main>
+      <header>
+        <h1 class="main-title">Mouse Sensitivity Calculator</h1>
+      </header>
+
       <section>
         <h2>Introduction & Instruction</h2>
         <section>
           <p>
            Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity for different games. We mainly support three games: 1) Tom Clancy’s Rainbow Six Siege
-2) Valorant, 3) Counter-Strike: Global Offensive.
+            2) Valorant, 3) Counter-Strike: Global Offensive.
           </p>
         </section>
       </section>
@@ -75,6 +86,7 @@
             <label for="item">Sensitivity</label>
             <input type="text" name="item" id="item">
           </section>
+
           <section>
             <h3>Convert To</h3>
             <img src="img/Valorant.jpeg"
@@ -86,19 +98,28 @@
             <label for="item">Sensitivity</label>
             <input type="text" name="item" id="item">
           </section>
+
         </section>
+
         <section>
           <button>Calculate</button>
           <ul></ul>
         </section>
+
       </section>
     </main>
-    <footer>
-      <hr>
-      <p>
-        Portions of this page &copy;DubHacks
-        Ran Liao, Yudong Li, Tianyu Pan, Shi Pu, Jing Wang.
-      </p>
-    </footer>
+  </div>
+
+  <div id="Changelog" class="tabcontent">
+    This is Changelog for 1.0
+  </div>
+
+  <footer>
+    <hr>
+    <p>
+      Portions of this page &copy;DubHacks
+      Ran Liao, Yudong Li, Tianyu Pan, Shi Pu, Jing Wang.
+    </p>
+  </footer>
   </body>
 </html>
