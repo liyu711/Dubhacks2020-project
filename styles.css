@@ -30,14 +30,14 @@ main > section {
   border-top-style: dotted;
 }
 
-header, section section, #todo > section, .nav-bar {
+header, section section, #todo > section, .nav-bar, #Credits > section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-header, #todo > section > section {
+header, #todo > section > section, #Credits > section > section {
   flex-direction: column;
 }
 
@@ -67,6 +67,10 @@ h2 {
 
 h3 {
   font-size: 40px;
+}
+
+h4 {
+  margin: 0px;
 }
 
 input, footer p, button {
@@ -138,4 +142,13 @@ img.icon {
   border-radius: 10%;
   width: 120px;
   height: 120px;
+}
+
+#Credits > section > section {
+  border-bottom: 5px;
+  margin: 10px;
+}
+
+#Credits > section > section p {
+  margin: 0px;
 }
