@@ -30,7 +30,7 @@ main > section {
   border-top-style: dotted;
 }
 
-header, section section, #todo > section {
+header, section section, #todo > section, .nav-bar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +53,10 @@ h1, h2 {
   /*text-shadow: 10px 10px 10px rgb(138, 190, 250);*/
 }
 
+li {
+  margin: 45px;
+}
+
 h1 {
   font-size: 80px;
 }
@@ -65,7 +69,7 @@ h3 {
   font-size: 40px;
 }
 
-input, footer p {
+input, footer p, button {
   font-size: 20px;
 }
 
@@ -93,10 +97,11 @@ img {
   left: 0;
   font-size: 20px;
   float: left;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-list {
-  display: inline-block;
   padding: 0;
   margin: 0;
   padding-top: .wrem;
