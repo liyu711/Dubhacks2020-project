@@ -1,10 +1,12 @@
 .dropbtn, .tablink {
-    background-color: azure;
-    color: teal;
+    background-color: rgb(28, 23, 70);
+    color: whitesmoke;
+    opacity: 120%;
     padding: 16px;
     font-size: 16px;
     border: none;
     font-family: 'Share Tech Mono', monospace;
+    opacity: 80%;
 }
 
 .dropdown {
