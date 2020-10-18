@@ -58,7 +58,7 @@ li {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 75px;
 }
 
 h2 {
@@ -167,4 +167,17 @@ img.icon {
 #Changelog {
   color: rgb(231, 231, 231);
   text-shadow: 20px 20px 20px black;
+}
+
+#Changelog li {
+  list-style-type: square;
+}
+
+#Changelog p {
+  text-decoration: underline;
+}
+
+#Changelog hr {
+  height: 10px;
+  background-color: whitesmoke;
 }
