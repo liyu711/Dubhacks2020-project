@@ -100,7 +100,6 @@ img {
   padding: 5px;
   top: 0;
   left: 0;
-  font-size: 30px;
   background-image: url("img/cool-background2.png");
   opacity: 98%;
 }
@@ -115,6 +114,7 @@ img {
 
 .nav-item {
   display: inline;
+  font-size: 50px;
 }
 
 .main-title {
