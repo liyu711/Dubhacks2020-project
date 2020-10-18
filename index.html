@@ -17,6 +17,9 @@
     <nav class="nav-bar">
       <ul class="nav-list">
           <li class="nav-item">
+            <button id="defaultOpen" class="dropbtn" onclick="openTab(event, 'Home')">Home</button>
+          </li>
+          <li class="nav-item">
               <button class="tablink" onclick="openTab(event, 'Calculator')">
                 <span class="logo" aria-hidden="true"><img class="icon" src="img/placeholder-icon.png">Calculator</button>
           </li>
@@ -45,16 +48,6 @@
       <header>
         <h1 class="main-title">Mouse Sensitivity Calculator</h1>
       </header>
-
-      <section>
-        <h2>Introduction & Instruction</h2>
-        <section>
-          <p>
-           Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity for different games. We mainly support three games: 1) Tom Clancy’s Rainbow Six Siege
-            2) Valorant, 3) Counter-Strike: Global Offensive.
-          </p>
-        </section>
-      </section>
 
       <section id="todo">
         <h2>Calculation</h2>
@@ -176,6 +169,21 @@
     </section>
   </div>
 
+  <div id="Home" class="content">
+    <header>
+      <h1 class="main-title">Introduction & Instruction</h1>
+    </header>
+
+    <section>
+      <section>
+        <p>
+         Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity for different games. We mainly support three games: 1) Tom Clancy’s Rainbow Six Siege
+          2) Valorant, 3) Counter-Strike: Global Offensive.
+        </p>
+      </section>
+    </section>
+  </div>
+
   <footer>
     <hr>
     <p>
@@ -183,5 +191,8 @@
       Ran Liao, Yudong Li, Tianyu Pan, Shi Pu, Jing Wang.
     </p>
   </footer>
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
   </body>
 </html>
