@@ -76,7 +76,7 @@
               <option value="cs-1">Counter Strike: Global Offensive</option>
               <option value="va-1">Valorant</option>
             </select>
-            <input type="text" readonly="readonly" id="txtresult1"/>
+            <input type="invisible" readonly="readonly" id="txtresult1"/>
 
             <script>
               $(document).ready(function() {
@@ -118,7 +118,7 @@
               <option value="cs-2">Counter Strike: Global Offensive</option>
               <option value="va-2">Valorant</option>
             </select>
-            <input type="text" readonly="readonly" id="txtresult2"/>
+            <input type="invisible" readonly="readonly" id="txtresult2"/>
 
             <script>
               $(document).ready(function() {
@@ -173,22 +173,23 @@
                   })
 
               if(id("txtresult1").value =="r6-1") {
-                num1 = 15500;
+                num1 = 155000;
               } else if (id("txtresult1").value =="cs-1") {
                 num1 = 41000;
-              } else {
+              } else if (id("txtresult1").value =="va-1"){
                 num1 = 12400;
               }
               if(id("txtresult2").value =="r6-2") {
-                num2 = 15500;
+                num2 = 155000;
               } else if (id("txtresult2").value =="cs-2") {
                 num2 = 41000;
-              } else {
+              } else if (id("txtresult2").value =="va-2"){
                 num2 = 12400;
               }
 
-
-              if(id("item1").value == "" || id("item3").value == ""||(id("item4").value == "" && id("item6").value == "")) {
+              if(num1 == 0 || num2 == 0) {
+                id("demo").innerHTML = "You have not choose the game";
+              } else if(id("item1").value == "" || id("item3").value == ""||(id("item4").value == "" && id("item6").value == "")) {
                 id("demo").innerHTML = "Not enough information";
               } else if(id("item4").value == "") {
                 var result = (input1 * input3 * num2 / (input6 * num1));
