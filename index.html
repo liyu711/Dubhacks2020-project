@@ -55,17 +55,17 @@
         <section>
           <section>
             <h3>Convert From:</h3>
-            
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
               $(function(){
-                $("#selectMe").change(function(){
-                  var e1 = document.getElementById("selectMe");
-                  var display1 = e1.options[e1.selectedIndex].value;
-                  $("#txtresult1").val(display1);
+                  $("#selectMe").change(function(){
+                    var e1 = document.getElementById("selectMe");
+                    var display1 = e1.options[e1.selectedIndex].value;
+                    $("#txtresult1").val(display1);
+                  })
                 })
-              })
             </script>
+              
 
             <div id="r6-1" class="group"><img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic"></div>
             <div id="cs-1" class="group"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
@@ -98,16 +98,15 @@
 
           <section>
             <h3>Convert To:</h3>
-
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
               $(function(){
-                $("#selectMe2").change(function(){
-                  var e2 = document.getElementById("selectMe2");
-                  var display2 = e2.options[e2.selectedIndex].value;
-                  $("#txtresult2").val(display2);
-                })
-              })
+                    $("#selectMe2").change(function(){
+                      var e2 = document.getElementById("selectMe2");
+                      var display2 = e2.options[e2.selectedIndex].value;
+                      $("#txtresult2").val(display2);
+                    })
+                  })
             </script>
 
             <div id="r6-2" class="group2"><img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic"></div>
@@ -140,56 +139,71 @@
           </section>
 
         </section>
+
         <section>
           <button onclick="calculates()">Calculate</button>
         </section>
-        <section>
-        <script>
-        function calculates() {
-          let input1 = id("item1").value;
-          let input2 = id("item2").value;
-          let input3 = id("item3").value;
-          let input4 = id("item4").value;
-          let input5 = id("item5").value;
-          let input6 = id("item6").value;
-          var num1 = 0;
-          var num2 = 0;
-          if(id("txtresult1").value ="r6-1") {
-            num1 = 41000;
-          } else if (id("txtresult1").value ="cs-1") {
-            num1 = 155000;
-          } else {
-            num1 = 12400;
-          }
-          if(id("txtresult2").value ="r6-2") {
-            num2 = 41000;
-          } else if (id("txtresult2").value ="cs-2") {
-            num2 = 155000;
-          } else {
-            num2 = 12400;
-          }
-
-
-          if(id("item1").value == "" || id("item3").value == ""||(id("item4").value == "" && id("item6").value == "")) {
-            id("demo").innerHTML = "Not enough information";
-          } else if(id("item4").value == "") {
-            var result = (input1 * input3 * num2 / (input6 * num1));
-            id("demo").innerHTML = eval("result");
-          } else if (id("item6").value == ""){
-            var result = (input1 * input3 * num2 / (input4 * num1));
-            id("demo").innerHTML = eval("result");
-          }
-
-        }
-
-        function id(idName) {
-          return document.getElementById(idName);
-        }
-        </script>
-
         <p id="demo"></p>
-        </section>
+        <section>
+          <script>
+            function calculates() {
+              let input1 = id("item1").value;
+              let input2 = id("item2").value;
+              let input3 = id("item3").value;
+              let input4 = id("item4").value;
+              let input5 = id("item5").value;
+              let input6 = id("item6").value;
+              var num1 = 0;
+              var num2 = 0;
 
+              $(function(){
+                  $("#selectMe").change(function(){
+                    var e1 = document.getElementById("selectMe");
+                    var display1 = e1.options[e1.selectedIndex].value;
+                    $("#txtresult1").val(display1);
+                  })
+                })
+
+                $(function(){
+                    $("#selectMe2").change(function(){
+                      var e2 = document.getElementById("selectMe2");
+                      var display2 = e2.options[e2.selectedIndex].value;
+                      $("#txtresult2").val(display2);
+                    })
+                  })
+
+              if(id("txtresult1").value =="r6-1") {
+                num1 = 15500;
+              } else if (id("txtresult1").value =="cs-1") {
+                num1 = 41000;
+              } else {
+                num1 = 12400;
+              }
+              if(id("txtresult2").value =="r6-2") {
+                num2 = 15500;
+              } else if (id("txtresult2").value =="cs-2") {
+                num2 = 41000;
+              } else {
+                num2 = 12400;
+              }
+
+
+              if(id("item1").value == "" || id("item3").value == ""||(id("item4").value == "" && id("item6").value == "")) {
+                id("demo").innerHTML = "Not enough information";
+              } else if(id("item4").value == "") {
+                var result = (input1 * input3 * num2 / (input6 * num1));
+                id("demo").innerHTML = eval("result");
+              } else if (id("item6").value == ""){
+                var result = (input1 * input3 * num2 / (input4 * num1));
+                id("demo").innerHTML = eval("result");
+              }
+            }
+
+            function id(idName) {
+              return document.getElementById(idName);
+            }
+          </script>
+        </section>
       </section>
     </main>
     <footer>
