@@ -192,3 +192,11 @@ img.icon {
   height: 8px;
   background-color: whitesmoke;
 }
+
+.reference {
+  flex-direction: column;
+}
+
+.referenceBloc {
+  flex-direction: column;
+}
