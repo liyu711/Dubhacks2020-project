@@ -79,13 +79,14 @@ p, ul {
 
 /* images setup */
 img {
-  width: 200px;
+  width: 300px;
   height: 250px;
   border-radius: 10%;
   margin-right: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
+  border: 5pt solid rgb(207, 205, 205);
 }
 
 .nav-bar {
@@ -96,9 +97,9 @@ img {
   top: 0;
   left: 0;
   font-size: 20px;
-  float: left;
   display: flex;
   justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
 .nav-list {
@@ -129,7 +130,11 @@ a {
 
 img.icon {
   float: left;
-  max-width: 1.8rem;
-  max-height: 1.8rem;
+  max-width: 2.8rem;
+  max-height: 2.8rem;
 }
 
+.nav-bar button {
+  border-radius: 10%;
+  margin-top: 8px;
+}
