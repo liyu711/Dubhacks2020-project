@@ -96,17 +96,17 @@ img {
 .nav-bar {
   position: fixed;
   width: 100%;
-  background-color: #4b2e83;
-  padding: .50rem;
+  height: 200px;
+  padding: 5px;
   top: 0;
   left: 0;
-  font-size: 20px;
+  background-image: url("img/cool-background2.png");
+  opacity: 98%;
 }
 
 .nav-list {
   padding: 0;
   margin: 0;
-  padding-top: .wrem;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -114,6 +114,7 @@ img {
 
 .nav-item {
   display: inline;
+  font-size: 50px;
 }
 
 .main-title {
@@ -122,7 +123,7 @@ img {
 
 a {
   display: inline;
-  color: white;
+  color: rgb(207, 205, 205);
 }
 
 .logo {
@@ -156,4 +157,14 @@ img.icon {
 .dropdown2 button{
   width: 250px;
   height: 18px;
+}
+
+#Home > section > section {
+  padding: 30px;
+  margin: 30px;
+}
+
+#Changelog {
+  color: whitesmoke;
+  text-shadow: 20px 20px 20px black;
 }
