@@ -69,9 +69,10 @@
 
             <div id="r6-1" class="group"><img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic"></div>
             <div id="cs-1" class="group"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
-            <div id="va-1" class="group"><img src="img/Valorant.jpeg"></div>
+            <div id="va-1" class="group"><img src="img/Valorant.jpeg" alt="Valorant"></div>
+            <div id="NaN-1" class="group"><img src="img/gamepad-controller-icon-vector-25671418.jpg" alt="placeholder"></div>
             <select id="selectMe">
-              <option value="NaN"> --Select Game-- </option>
+              <option value="NaN-1"> --Select Game-- </option>
               <option value="r6-1">Tom Clancy’s Rainbow Six Siege</option>
               <option value="cs-1">Counter Strike: Global Offensive</option>
               <option value="va-1">Valorant</option>
@@ -82,7 +83,7 @@
             <script>
               $(document).ready(function() {
                 $('.group').hide();
-                $('#r6-1').show();
+                $('#NaN-1').show();
                 $('#selectMe').change(function() {
                   $('.group').hide();
                   $('#'+$(this).val()).show();
@@ -112,9 +113,10 @@
 
             <div id="r6-2" class="group2"><img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic"></div>
             <div id="cs-2" class="group2"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
-            <div id="va-2" class="group2"><img src="img/Valorant.jpeg"></div>
+            <div id="va-2" class="group2"><img src="img/Valorant.jpeg" alt="Valorant"></div>
+            <div id="NaN-2" class="group2"><img src="img/gamepad-controller-icon-vector-25671418.jpg" alt="placeholder"></div>
             <select id="selectMe2">
-              <option value="NaN"> --Select Game-- </option>
+              <option value="NaN-2"> --Select Game-- </option>
               <option value="r6-2">Tom Clancy’s Rainbow Six Siege</option>
               <option value="cs-2">Counter Strike: Global Offensive</option>
               <option value="va-2">Valorant</option>
@@ -126,7 +128,7 @@
             <script>
               $(document).ready(function() {
                 $('.group2').hide();
-                $('#r6-2').show();
+                $('#NaN-2').show();
                 $('#selectMe2').change(function() {
                   $('.group2').hide();
                   $('#'+$(this).val()).show();
