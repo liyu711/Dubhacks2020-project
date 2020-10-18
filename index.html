@@ -17,6 +17,9 @@
     <nav class="nav-bar">
       <ul class="nav-list">
           <li class="nav-item">
+            <button id="defaultOpen" class="dropbtn" onclick="openTab(event, 'Home')">Home</button>
+          </li>
+          <li class="nav-item">
               <button class="tablink" onclick="openTab(event, 'Calculator')">
                 <span class="logo" aria-hidden="true"><img class="icon" src="img/placeholder-icon.png">Calculator</button>
           </li>
@@ -46,22 +49,22 @@
         <h1 class="main-title">Mouse Sensitivity Calculator</h1>
       </header>
 
-      <section>
-        <h2>Introduction & Instruction</h2>
-        <section>
-          <p>
-           Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity for different games. We mainly support three games: 1) Tom Clancy’s Rainbow Six Siege
-            2) Valorant, 3) Counter-Strike: Global Offensive.
-          </p>
-        </section>
-      </section>
-
       <section id="todo">
         <h2>Calculation</h2>
         <section>
           <section>
             <h3>Convert From</h3>
             <img src="img/Rainbow_Six_Siege.jpg" alt="Rainbow_Six_Siege pic">
+            <div class="dropdown2">
+              <!-- ## need function calculate -->
+              <!-- <button onclick="calculate()" class="dropbtn2">Game</button> -->
+              <button class="dropbtn2"></button>
+              <div id="game" class="dropdown-content2">
+                <a>Tom Clancy’s Rainbow Six Siege</a>
+                <a>Valorant</a>
+                <a>Counter-Strike: Global Offensive</a>
+              </div>
+            </div>
             <label for="item">Mouse DPI</label>
             <input type="text" name="item" id="item">
             <label for="item">FOV</label>
@@ -74,6 +77,16 @@
             <h3>Convert To</h3>
             <img src="img/Valorant.jpeg"
               alt="Valorant pic">
+              <div class="dropdown2">
+                <!-- ## need function calculate -->
+                <!-- <button onclick="calculate()" class="dropbtn2">Game</button> -->
+                <button class="dropbtn2"></button>
+                <div id="game" class="dropdown-content2">
+                  <a>Tom Clancy’s Rainbow Six Siege</a>
+                  <a>Valorant</a>
+                  <a>Counter-Strike: Global Offensive</a>
+                </div>
+              </div>
             <label for="item">Mouse DPI</label>
             <input type="text" name="item" id="item">
             <label for="item">FOV</label>
@@ -90,7 +103,6 @@
 
       </section>
     </main>
-
     <footer>
       <hr>
       <p>
@@ -101,9 +113,54 @@
   </div>
 
   <div id="Changelog" class="content">
-    <main>
-      <h1 class="main-title">This is Changelog for 1.0</h1>
-    </main>
+    <h1 class="main-title">This is Changelog for 1.0</h1>
+    <section>
+      <p>
+        # Changelog <br>
+        All the notable changes for this project are documented in this file.<br>
+        The github for the project: <a href="https://github.com/liyu711/Dubhacks2020-project">https://github.com/liyu711/Dubhacks2020-project.git</a>
+      </p>
+      <p>
+        ### Build the basic structures<br>
+        - establish the main framework for the html and css files
+      </p>
+      <p>
+        ### Motify<br>
+        - changed the background image, changed the fonts and the color.<br>
+        - change the layout. developed a better idea compared to the original scratch while working on the code
+      </p>
+      <p>
+        ### Add<br>
+        - embeded the navigation bar<br>
+        - added the logo of the website<br>
+        - changed the fonts in the navigation bar, linked each buttons to the corresponding web links
+      </p>
+      <p>
+        ### Updated<br>
+        - uploaded the pictures of each games and updated the icon place holder<br>
+        - updated the stype, added the footer including all the developers' names
+      </p>
+      <p>
+        ### Motify<br>
+        - motified the navigation bar, fixed the format<br>
+        - created dropdown menu for Supported games, Changelog<br>
+        - changed the background image<br>
+        - motify the spacing in the navigation bar.
+      </p>
+      <p>
+        ### Add<br>
+        - add code for the multi-tab (very different from our original scratch)<br>
+         - not exactly what we expected, but getting closer<br>
+         - two pages showed up at the same time<br>
+        - create the page for the web developers<br>
+        - added the image frame
+      </p>
+      <p>
+       ### Debug<br>
+       - fixed some bugs<br>
+       - fixed the multi-tab issues
+      </p>
+    </section>
     <footer>
       <hr>
       <p>
@@ -152,5 +209,24 @@
     </footer>
   </div>
 
+  <div id="Home" class="content">
+    <header>
+      <h1 class="main-title">Introduction & Instruction</h1>
+    </header>
+
+    <section>
+      <section>
+        <p>
+         Mouse Sensitivity Calculator allows users to calculate the mouse sensitivity for
+         different games.<br>
+         We are currently supporting three games:<br>
+         1) Tom Clancy’s Rainbow Six Siege, 2) Valorant, 3) Counter-Strike: Global Offensive.
+        </p>
+      </section>
+    </section>
+  </div>
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
   </body>
 </html>

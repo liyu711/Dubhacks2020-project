@@ -123,7 +123,7 @@ img {
 
 a {
   display: inline;
-  color: white;
+  color: rgb(207, 205, 205);
 }
 
 .logo {
@@ -152,4 +152,19 @@ img.icon {
 
 #Credits > section > section p {
   margin: 0px;
+}
+
+.dropdown2 button{
+  width: 250px;
+  height: 18px;
+}
+
+#Home > section > section {
+  padding: 30px;
+  margin: 30px;
+}
+
+#Changelog {
+  color: whitesmoke;
+  text-shadow: 20px 20px 20px black;
 }
