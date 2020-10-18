@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 body {
+  /* https://coolbackgrounds.io/ for background image*/
   background-image: url("img/cool-background.png");
   background-size: cover;
   background-attachment: fixed;
@@ -111,6 +112,7 @@ img.profile {
   padding: 5px;
   top: 0;
   left: 0;
+   /* https://coolbackgrounds.io/ for background image*/
   background-image: url("img/cool-background2.png");
   opacity: 98%;
 }
