@@ -71,6 +71,7 @@
             <div id="cs-1" class="group"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
             <div id="va-1" class="group"><img src="img/Valorant.jpeg"></div>
             <select id="selectMe">
+              <option value="NaN"> --Select Game-- </option>
               <option value="r6-1">Tom Clancy’s Rainbow Six Siege</option>
               <option value="cs-1">Counter Strike: Global Offensive</option>
               <option value="va-1">Valorant</option>
@@ -101,10 +102,10 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
               $(function(){
-                $("#selectMe").change(function(){
-                  var e2 = document.getElementById("selectMe");
+                $("#selectMe2").change(function(){
+                  var e2 = document.getElementById("selectMe2");
                   var display2 = e2.options[e2.selectedIndex].value;
-                  $("#txtresult").val(display2);
+                  $("#txtresult2").val(display2);
                 })
               })
             </script>
@@ -113,6 +114,7 @@
             <div id="cs-2" class="group2"><img src="img/Counter-Strike- Global Offensive.jpeg" alt="CS:GO"></div>
             <div id="va-2" class="group2"><img src="img/Valorant.jpeg"></div>
             <select id="selectMe2">
+              <option value="NaN"> --Select Game-- </option>
               <option value="r6-2">Tom Clancy’s Rainbow Six Siege</option>
               <option value="cs-2">Counter Strike: Global Offensive</option>
               <option value="va-2">Valorant</option>
@@ -175,7 +177,7 @@
             id("demo").innerHTML = eval("result");
           } else if (id("item6").value == ""){
             var result = (input1 * input3 * num2 / (input4 * num1));
-            id("demo").innerHTML = eval("result");›
+            id("demo").innerHTML = eval("result");
           }
 
         }
