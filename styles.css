@@ -58,7 +58,7 @@ li {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 75px;
 }
 
 h2 {
@@ -152,4 +152,32 @@ img.icon {
 
 #Credits > section > section p {
   margin: 0px;
+}
+
+.dropdown2 button{
+  width: 250px;
+  height: 18px;
+}
+
+#Home > section > section {
+  padding: 30px;
+  margin: 30px;
+}
+
+#Changelog {
+  color: rgb(231, 231, 231);
+  text-shadow: 20px 20px 20px black;
+}
+
+#Changelog li {
+  list-style-type: square;
+}
+
+#Changelog p {
+  text-decoration: underline;
+}
+
+#break {
+  height: 8px;
+  background-color: whitesmoke;
 }
